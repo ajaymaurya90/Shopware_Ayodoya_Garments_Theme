@@ -1,0 +1,42 @@
+{
+  "name": "swag/theme-skeleton",
+  "description": "Theme skeleton plugin",
+  "type": "shopware-platform-plugin",
+  "license": "MIT",
+  "version": "0.0.1",
+  "authors": [
+    {
+      "name": "Ajay Maurya",
+      "homepage": "https://www.ayodoy.com"
+    }
+  ],
+  "require": {
+    "shopware/core": "^6.6.0.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "AyodoyaGarmentsTheme\\": "src/"
+    }
+  },
+  "extra": {
+    "shopware-plugin-class": "AyodoyaGarmentsTheme\\AyodoyaGarmentsTheme",
+    "label": {
+      "de-DE": "Theme AyodoyaGarmentsTheme plugin",
+      "en-GB": "Theme AyodoyaGarmentsTheme plugin"
+    },
+    "copyright": "(c)2025 Ajay Maurya",
+    "plugin-icon": "src/Resources/config/plugin.png",
+    "description": {
+      "de-DE": "Ayodoya Theme Description",
+      "en-GB": "Ayodoya Theme Description"
+    },
+    "manufacturerlink": {
+      "de-DE": "https://www.ayodoya.com",
+      "en-GB": "https://www.ayodoya.com"
+    },
+    "supportlink": {
+      "de-DE": "https://www.ayodoya.com",
+      "en-GB": "https://www.ayodoya.com"
+    }
+  }
+}

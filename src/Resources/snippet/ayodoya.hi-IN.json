@@ -1,0 +1,25 @@
+{
+  "ayodoya": {
+    "headerTop": {
+      "text": "Today's special offer",
+      "anchor": "Shop Now"
+    },
+    "homeBanner": {
+
+    },
+    "homePromotion": {
+      "text1": "Secure Payment",
+      "description1": "100% Secure Payment",
+      "text2": "30 Days Return",
+      "description2": "If goods have problem",
+      "text3": "24/7 Support",
+      "description3": "Dedicated Support",
+      "text4": "Free Delivery",
+      "description4": "For all orders"
+    },
+    "homeNewArrivals": {
+
+    }
+
+  }
+}

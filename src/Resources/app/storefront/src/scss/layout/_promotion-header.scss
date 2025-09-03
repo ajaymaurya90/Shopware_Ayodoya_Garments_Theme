@@ -1,0 +1,60 @@
+.promotion-header {
+  background-color: #000000;
+  color:#f0f0f0;
+
+  .col {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 200px;
+    text-align: center;
+
+    .icon-box {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      padding: 1rem;
+      max-width: 300px;
+      margin: auto;
+
+      h3 {
+        font-size: 1.5rem;
+        font-weight: 600;
+        margin-bottom: 0.5rem;
+        color: white;
+      }
+
+      p {
+        font-size: 1rem;
+        color: #8c8b8b;
+        font-weight: 400;
+      }
+
+    }
+  }
+
+  .icon {
+    height: 40px;
+    width: 40px;
+    margin-right: 5px;
+    color: #f0f0f0;
+
+    & > svg {
+      top: 0px;
+    }
+  }
+
+}
+
+
+@include media-breakpoint-up(md){
+  .promotion-header{
+    .col{
+      &:first-child,
+      &:last-child{
+        display: flex;
+      }
+    }
+  }
+}

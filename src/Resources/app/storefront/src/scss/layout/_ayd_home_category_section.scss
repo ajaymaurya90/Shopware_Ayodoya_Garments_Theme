@@ -1,0 +1,32 @@
+.ayd-category-section{
+  background-color: black;
+  padding: 100px 0;
+}
+
+.ayd-category-section img{
+  height: 500px;
+  width: 400px;
+  padding: 5px;
+  transition: opacity 0.3s ease;
+  &:hover{
+    opacity: 0.7;
+  }
+}
+
+.cate-meta-data{
+  height: 170px;
+  width: 85%;
+  background-color: black;
+  transition: all 0.3s ease;
+  &:hover {
+    background-color: #db3d3d !important;
+    transform: scale(1.0)
+  }
+    p{
+      font-size: 16px; font-weight: 700;
+    }
+    h2{
+      font-size: 40px; font-weight: 800;
+    }
+}
+

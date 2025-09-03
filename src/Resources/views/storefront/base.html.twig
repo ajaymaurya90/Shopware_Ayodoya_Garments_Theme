@@ -1,0 +1,71 @@
+{% sw_extends '@Storefront/storefront/base.html.twig' %}
+
+{% block base_header_inner %}
+    <div class="container-fluid ayd-header-top">
+        {% sw_include '@Storefront/storefront/layout/header/ayd-header-top.html.twig'%}
+    </div>
+    <div class="container-fluid" style="background-color: #f5f5f5">
+        <div class="container">
+        {% sw_include '@Storefront/storefront/layout/header/ayd-header.html.twig' %}
+        </div>
+    </div>
+{% endblock %}
+
+
+{% block base_navigation %}
+    <div class="nav-main">
+        {# @deprecated tag:v6.7.0 - Block will be moved to storefront/layout/header.html.twig #}
+        {% block base_navigation_inner %}
+            {# @deprecated tag:v6.7.0 - This template will be removed, use storefront/layout/navbar/navbar.html.twig #}
+            {% sw_include '@Storefront/storefront/layout/navigation/ayd-navigation.html.twig' %}
+        {% endblock %}
+    </div>
+{% endblock %}
+
+{% block base_main %}
+    <main class="content-main" id="content-main">
+    {% block base_flashbags %}
+        <div class="flashbags container">
+            {% for type, messages in app.flashes %}
+                {% sw_include '@Storefront/storefront/utilities/alert.html.twig' with { type: type, list: messages } %}
+            {% endfor %}
+        </div>
+    {% endblock %}
+
+        {% if page.cmsPage.type == "landingpage" %}
+        {#  Section - home banner #}
+        {% block home_banner_1 %}
+            {% sw_include '@Storefront/storefront/layout/home-banner/ayd-banner.html.twig' %}
+        {% endblock %}
+        {# end #}
+            {#  Section - offers #}
+            {% sw_include '@Storefront/storefront/layout/promotion-header.html.twig' %}
+            {# end #}
+
+            {# Section New Arrivals #}
+            {% block ayd_new_arrivals %}
+                {% sw_include '@Storefront/storefront/layout/ayd-new-arrivals.html.twig' %}
+            {% endblock %}
+            {# end #}
+
+            {# Section Home Cateogory Section #}
+            {% block ayd_home_category %}
+                {% sw_include '@Storefront/storefront/layout/ayd-home-sections/category-section.html.twig' %}
+            {% endblock %}
+            {# end #}
+
+            {# Section top sellers #}
+            {% block ayd_top_sellers %}
+                {% sw_include '@Storefront/storefront/layout/ayd-top-sellers.html.twig' %}
+            {% endblock %}
+            {# end #}
+        {% endif %}
+        {{ parent() }}
+
+    </main>
+
+{% endblock %}
+{% block base_footer_inner %}
+    {% sw_include '@Storefront/storefront/layout/footer/ayd-footer-1.html.twig' %}
+
+{% endblock %}

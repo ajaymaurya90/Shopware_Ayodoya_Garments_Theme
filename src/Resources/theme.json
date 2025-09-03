@@ -1,0 +1,30 @@
+{
+  "name": "AyodoyaGarmentsTheme",
+  "author": "Shopware AG",
+  "description": {
+    "en-GB": "My custom theme",
+    "de-DE": "Mein custom thema"
+  },
+  "previewMedia": "app/storefront/dist/assets/preview.jpg",
+  "views": [
+     "@Storefront",
+     "@AyodoyaGarmentsTheme",
+     "@Plugins"
+  ],
+  "style": [
+    "app/storefront/src/scss/overrides.scss",
+    "@Storefront",
+    "app/storefront/src/scss/base.scss"
+  ],
+  "script": [
+    "@Storefront",
+    "app/storefront/dist/storefront/js/ayodoya-garments-theme/ayodoya-garments-theme.js"
+  ],
+  "asset": [
+    "@Storefront",
+    "app/storefront/src/assets"
+  ],
+  "iconSets": {
+    "custom-icons": "app/storefront/dist/src/assets/icon/ayd-icon"
+  }
+}
