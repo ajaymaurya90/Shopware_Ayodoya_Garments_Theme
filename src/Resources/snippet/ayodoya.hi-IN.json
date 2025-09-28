@@ -11,15 +11,40 @@
       "text1": "Secure Payment",
       "description1": "100% Secure Payment",
       "text2": "30 Days Return",
-      "description2": "If goods have problem",
+      "description2": "If goods have a problem",
       "text3": "24/7 Support",
       "description3": "Dedicated Support",
       "text4": "Free Delivery",
       "description4": "For all orders"
     },
     "homeNewArrivals": {
-
+      "description": "Check out the latest products",
+      "heading": "New Arrivals",
+      "btnText1": "View all",
+      "btnText2": "Add to cart",
+      "sale": "Sale"
+    },
+    "homeTopSellers": {
+      "description": "Check out the latest products",
+      "heading": "New Arrivals",
+      "btnText1": "View all",
+      "btnText2": "Add to cart",
+      "sale": "Sale"
+    },
+    "homeCategory": {
+      "counter1":"",
+      "category1": "",
+      "counter2":"",
+      "category2": "",
+      "counter3":"",
+      "category3": ""
+    },
+    "footer": {
+      "footerTopText": "Get connected with us on the social networks:",
+      "section1": {
+        "heading": "Company name",
+        "description": "Here you can use rows and columns to organize your footer content. Lorem ipsum dolor sit amet, consectetur adipisicing elit"
+      }
     }
-
   }
 }
